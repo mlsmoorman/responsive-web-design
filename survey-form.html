@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="survey-form-styles.css"/>
+</head>
+<body>
+	<h1 id="title">Pet Survey</h1>
+	<p id="description">Please fill out the below so that we can learn more about your pets!</p>
+	<form action="" method="post" id="survey-form" for="submit">
+		<fieldset>
+      <legend>Your Info</legend>
+      <label id="name-label">Name: <input placeholder="Enter your name" type="text" id="name" required></label>
+		  <label id="email-label">Email: <input placeholder="Enter your email" type="email" id="email" required></label>
+    </fieldset>  
+    <fieldset>
+      <legend>Survey Questions</legend>
+      <label id="number-label">How many pets do you own? <input placeholder="Number of Pets (max 20)" type="number" id="number" min="1" max="20"></label>
+      What type of pets do you own?
+    <select id="dropdown">
+      <option>Select One</option>
+      <option name="options">Cat(s)</option>
+      <option name="options">Dog(s)</option>
+      <option name="options">Cat(s) & Dog(s)</option>
+      <option name="options">Bird(s)</option>
+      <option name="options">Reptile(s)</option>
+      <option name="options">All of the above</option>
+      <option name="options">Other</option>
+    </select>
+    <textarea placeholder="If you selected 'other' please add additional details here..."></textarea>
+  </fieldset>
+  <fieldset>
+    <legend>What do you feed your animals?</legend>
+    <label><input class="inline" type="radio" checked value="kibble" name="feed">Kibble</label>
+    <label><input class="inline" type="radio" value="wet-food" name="feed">Wet Food</label>
+    <label><input class="inline" type="radio" value="both" name="feed">Both</label>
+    <label><input class="inline" type="radio" value="other" name="feed">Other</label>
+  </fieldset>
+  <fieldset>
+    <legend>How often do you see the vet?</legend>
+    <label><input type="radio" class="inline" checked value="yearly" name="vet">Yearly</label>
+    <label><input type="radio" class="inline" value="more" name="vet">More than once a year</label>
+    <label><input type="radio" class="inline" value="less" name="vet">Less than once a year</label>
+  </fieldset>
+  <fieldset>
+    Remain Anonymous? <input type="checkbox" class="inline" value="anonymous">
+    Sign up for future newsletters? <input type="checkbox" class="inline" value="newsletters">
+  </fieldset>
+    <button type="submit" id="submit">Submit</button>
+	</form>
+</body>
+</body>
+</html>
