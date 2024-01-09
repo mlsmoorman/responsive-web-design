@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./tech-doc-page.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Building a Web-Page</header>
+      <ul>
+        <li><a class="nav-link" href="#HTML_&_CSS">HTML & CSS</a></li>
+      <li><a class="nav-link" href="#HTML_Terms">HTML Terms</a></li>
+      <li><a class="nav-link" href="#CSS_Terms">CSS Terms</a></li>
+      <li><a class="nav-link" href="#HTML_Structure">HTML Structure</a></li>
+      <li><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li>
+    </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="HTML_&_CSS">
+        <header id="HTML_&_CSS"><strong>HTML & CSS</strong></header>
+        <p>HTML or HyperText Markup Language defines the webpage content.</p>
+        <p>CSS or Cascading Style Sheets is used to style the content of the webpage.</p>
+      </section>
+      <section class="main-section" id="HTML_Terms">
+        <header id="HTML_Terms"><strong>HTML Terms</strong></header>
+        <code></code>
+        <code></code>
+        <ul>
+          <li><strong>Elements</strong>
+            <p class="description">
+              Designators that define the structure and content of the objects inside of a web-page.  Here is an example of an anchor element:
+              <code><span class="letter-spacing">< a ></span></code>
+            </p>
+          </li>
+          <li><strong>Tags</strong>
+            <p class="description">
+              Elements are wrapped in less than and greater than brackets - these are known as Tags.  There are opening and closing tags.  Here is an example of an anchor link with opening and closing tags:
+              <code><span class="letter-spacing">< a > ... < / a ></span></code>
+            </p>
+          </li>
+          <li><strong>Attributes</strong>
+            <p class="description">Attributes provide additional information about an element.  They are also used to identify content that you want to change or manipulate using CSS. Sticking with our same example, the anchor tag, here you will ssee an attribute of "href" which is used to define the new location the anchor tag will direct you to:
+              <code><span class="letter-spacing right">< a </span> href="https://www.google.com/" <span class="letter-spacing">< / a ></span></code>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="CSS_Terms">
+        <header id="CSS_Terms"><strong>CSS Terms</strong></header>
+        <ul>
+          <li><strong>Selectors</strong>
+            <p class="description">A selector determines which element(s) of a page to target and apply CSS styles to.  For example, if you wanted to apply CSS styling to all of your paragraph elements in your app, it would look like this:
+              <code>p { ... }</code>
+            </p>
+          </li>
+          <li><strong>Properties</strong>
+            <p class="description">Once an element is targeted you can update the properties within the selector to change its properties.  In the below example we are using the background-color property to change the background color to black:
+              <code>p { background-color: black; }</code>
+            </p>
+          </li>
+          <li><strong>Values</strong>
+            <p class="description">Once we have targeted the element to be modified and have determined which property we would like to adjust, we add a value. In the above example, the value we used would be "black."</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Structure">
+        <header id="HTML_Structure"><strong>HTML Structure</strong></header>
+        <p>HTML documents are saved as .html files.  There are several text editors that can be used available for free.  I defer to using VS Code.  You can choose from the many that are out there.</p>
+        <p>The structure of the file must start with <span class="letter-spacing">< !</span>DOCTYPE html></p> along with an html element that houses head and body elements.
+        <p>The head is where your meta information goes along with your document title and any links to your CSS stylesheets.</p>
+        <p>The body is where the bulk of your HTML code will be housed - this is where all of the information displayed on your webpage shows up.</p>
+      </section>
+      <section class="main-section" id="CSS_Selectors">
+        <header id="CSS_Selectors"><strong>CSS Selectors</strong></header>
+        <ul>
+          <li><strong>Class Selectors</strong>
+            <p class="description">The class selector targets a group of elements and not just all of the elements of the same type.  The class selector allows changing properties of different parts of the HTML document regardless of the element type, as long as the class selector is the same for those targeted elements.
+              <p>CSS example:</p>
+              <code>.purple { ... }</code>
+              <p> HTML example:</p>
+              <code class="no-padding"><span><</span>div class="purple"></code>
+              <code class="no-padding"><span><</span>p class="purple"></code>
+            </p>
+          </li>
+          <li><strong>ID Selectors</strong>
+            <p class="description">ID selectors are more precise than class selectors. ID elements should only be used once per page and only within similar elements.
+              <p>CSS example:</p>
+              <code>#purple { ... }</code>
+              <p> HTML example:</p>
+              <code><span><</span>div id="purple"></code>
+            </p>
+          </li>
+        </ul>
+        <code></code>
+      </section>
+    <footer>For more information on building a webpage, please visit our page source <a class="footer" href="https://learn.shayhowe.com/html-css/building-your-first-web-page/">here</a>.</footer>
+    </main>
+  </body>
+</html>

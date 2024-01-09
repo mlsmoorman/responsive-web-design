@@ -1,0 +1,89 @@
+@media screen and (min-width: 480px) {
+	body {
+	  background-color: lightgreen;
+	}
+  }
+  
+  body {
+	display: block;
+	margin: 10px;
+  }
+  
+  nav > header {
+	color: rgb(200, 200, 200);
+	font-size: 25px;
+	text-align: center;
+  }
+  
+  nav {
+	height: 100%;
+	width: 200px;
+	background-color: black;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 60px;
+  }
+  
+  .nav-link {
+	padding: 10px 10px 10px 0;
+	width: 100%;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	
+  }
+  
+  .nav-link:hover {
+	color: #f1f1f1;
+  }
+  
+  main {
+	margin-left: 20%;
+  }
+  
+  .main-section {
+	font-size: 20px;
+  }
+  
+  .description {
+	margin-top: 0;
+  }
+  
+  code {
+	display: block;
+	background-color: rgb(200, 200, 200);
+	margin-top: 10px;
+  }
+  
+  .letter-spacing {
+	letter-spacing: -5px;
+  }
+  
+  .right {
+	padding-right: 4px;
+  }
+  
+  .no-padding{
+	margin-bottom: 0;
+	margin-top: 0;
+  }
+  
+  footer {
+	display: block;
+	background-color: black;
+	color: rgb(200, 200, 200);
+	text-align: center;
+	font-size: 20px;
+  }
+  
+  .footer {
+	color: rgb(200, 200, 200);
+  }
+  
+  .footer:hover {
+	color: white;
+  }
