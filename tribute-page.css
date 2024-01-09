@@ -1,0 +1,30 @@
+* {
+	text-align: center;
+	background-color: purple;
+	color: rgb(222, 222, 222)
+  }
+  
+  #title, strong {
+	color: black;
+	text-shadow: 0 0 10px white;
+  }
+  
+  img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	border: 2px solid white;
+  }
+  
+  li {
+	display: block;
+	max-width: 500px;
+	text-align: left;
+	margin: auto;
+	font-size: 20px;
+  }
+  
+  footer {
+	font-size: 25px;
+  }
