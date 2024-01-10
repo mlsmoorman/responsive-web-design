@@ -1,0 +1,43 @@
+header {
+	background-color: #dddddd;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  
+  .nav-link {
+	padding-right: 25px;
+  }
+  
+  img {
+	margin: 0px 25px 10px 10px;
+  }
+  
+  li {
+	display: inline;
+	float: right;
+  }
+  
+  a:hover {
+	background-color: purple;
+	color: white;
+  }
+  
+  .flex-container {
+	display: flex;
+	margin-top: 100px;
+	padding-bottom: 5px;
+	max-width: 1000px;
+  }
+  
+  .border {
+	border: 1px solid purple;
+	padding: 4px;
+  }
+  
+  @media only screen and (max-width: 420px) {
+	* {
+	  font-size: 10px;
+	}
+  }
